@@ -57,7 +57,9 @@
             </h2>
             <hr>
 
-            <?php if(empty($appointments_list)): ?>
+            <?php
+            error_reporting(E_ERROR | E_PARSE);
+            if(empty($appointments_list)): ?>
                 <p style="color:white">There is no value</p>
             <?php endif; ?>
 

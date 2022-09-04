@@ -47,7 +47,7 @@
             <p class="work-p">
                 Need to refill your oil? We got your back! Just come by to our shop and we will refill it for you.
             </p>
-            <button class="work-button">Location</button>
+            <a href="#contact"><button class="work-button">Location</button></a>
         </div>
         <div class="work-card">
             <h3 class="work-header">ENGINE REPAIR</h3>
@@ -56,7 +56,7 @@
             <p class="work-p">
                 Some engines giving your trouble? no worries when our engineers are right outside your doorsteps.
             </p>
-            <button class="work-button">Appointment</button>
+            <a href="#appo"><button class="work-button">Appointment</button></a>
         </div>
         <div class="work-card work-card-last">
             <h3 class="work-header">SCHEDULED MAINTAINCE</h3>
@@ -65,7 +65,7 @@
             <p class="work-p">
                 Your car is bugging you and you don't know what is the problem? Schedule a appointment and get it fixed!
             </p>
-            <button class="work-button">Appointment</button>
+            <a href="#appo"><button class="work-button">Appointment</button></a>
         </div>
 
     </div>
@@ -229,30 +229,34 @@
          <!-- ******************* -->
 
 
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id="myForm" method="POST" autocomplete="off">
+         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id="myForm" method="POST" autocomplete="off">
+                <div class="two">
                 <div class="inline-formcell">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="inline-formcell">
                     <label for="phone">Phone</label>
-                    <input type="text" id="phone" name="phone" required>
+                    <input type="number" id="phone" name="phone" required>
+                </div>
                 </div>
                 <div class="formcell-wholeline">
                     <label for="address">Address</label>
                     <input type="text" id="address" name="address" required>
                 </div>
+                <div class="two-b">
                 <div class="inline-formcell third">
                     <label for="car-license">Car License Number</label>
-                    <input type="text" id="car-license" name="car_license_number" required>
+                    <input type="number" id="car-license" name="car_license_number" required>
                 </div>
                 <div class="inline-formcell third">
                     <label for="car-engine">Car Engine Number</label>
-                    <input type="text" id="car-engine" name="car_engine_number" required>
+                    <input type="number" id="car-engine" name="car_engine_number" required>
                 </div>
-                <div class="date-mechanic">
+                </div>
+                <div class="date-mechanic two">
                     <div class="inline-formcell">
-                        <label for="car-engine">Date</label>
+                        <label for="date">Date</label>
                         <input type="date" id="userDate" name="date"placeholder="Select Date" required>
                     </div>
                     <div class="inline-formcell">
